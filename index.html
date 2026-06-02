@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El rincón de Jostin</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 5 L63 38 L98 38 L70 60 L82 95 L50 75 L18 95 L30 60 L2 38 L37 38 L50 5 Z' fill='white' stroke='%23333' stroke-width='2'/%3E%3C/svg%3E">
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 5 L63 38 L98 38 L70 60 L82 95 L50 75 L18 95 L30 60 L2 38 L37 38 L50 5 Z' fill='white' stroke='%23333' stroke-width='2'/%3E%3C/svg%3E">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>El rincón de Jostin</h1>
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+            <i class="fas fa-moon"></i>
+            <span>Modo Oscuro</span>
+        </button>
+
+        <nav class="nav-tabs">
+            <button class="tab-button active" onclick="openTab(event, 'principal')">Principal</button>
+            <button class="tab-button" onclick="openTab(event, 'linux')">Cosas de Linux</button>
+            <button class="tab-button" onclick="openTab(event, 'servicios')">Proyectos</button>
+        </nav>
+    </header>
+
+    <div class="layout">
+        <div id="principal" class="tab-content active">
+            <main>
+                <h2>Holasss</h2>
+                <p>Gracias por entrar aquí, es mi sitio web, está hecho con mucha determinación y cariño. =3</p>
+            </main>
+
+            <section>
+                <h2>Sobre mi:</h2>
+                <ul class="bio-lista">
+                    <li><span class="chulito">✔</span> Soy Jostin lol.</li>
+                    <li><span class="chulito">✔</span> Me dedico a cosas random con Linux.</li>
+                    <li><span class="chulito">✔</span> Estoy abierto para nuevos amigos xd.</li>
+                </ul>
+            </section>
+
+            <div class="tarjeta-nota">
+                <p><strong>Nota importante:</strong> Mi servidor y este sitio en el dominio gatomichi12.duckdns.org no funcionarán si mi pc no está encendida, al lado puedes ver si está funcionando o no.</p>
+            </div>
+        </div>
+
+        <div id="linux" class="tab-content">
+            <section>
+                <h2>Mi rincón Linuxero 🐧</h2>
+                <p># Actualmente usando: Alpine Linux</p>
+                <p># Mi nuevo reto es conseguir una nueva GPU y CPU como también un SSD</p>
+                <p># Soy capaz de todo. 😼</p>
+            </section>
+        </div>
+
+        <div id="servicios" class="tab-content">
+            <a href="https://gatomichi12.duckdns.org/yt-dlp/" class="tarjeta-servicio" style="border-left-color: #ff0000;">
+                <h2>
+                    <span class="icono">📥</span>
+                    Descargador de Video & Audio (yt-dlp) →
+                </h2>
+                <p>Pega un enlace de YouTube para extraer su información. Permite elegir formatos MP4, WebM o MP3 de forma minimalista en resoluciones de hasta 4K.</p>
+            </a>
+
+            <a href="https://gatomichi12.duckdns.org/nextcloud" class="tarjeta-servicio">
+                <h2>
+                    Mi servidor de Nextcloud →
+                </h2>
+                <p>Almacena, sincroniza y comparte tus archivos con privacidad. Necesitas una cuenta, escríbeme para creártela.</p>
+            </a>
+
+            <a href="https://gatomichi12.duckdns.org/convertidor/" class="tarjeta-servicio">
+                <h2>
+                    <span class="icono">🔄</span>
+                    Convertidor Universal de Archivos →
+                </h2>
+                <p>Convierte imágenes, videos, audio y documentos usando FFmpeg e ImageMagick. Sube, convierte y descarga al instante.</p>
+            </a>
+        </div>
+
+        <div class="columna-derecha">
+            <aside class="sidebar-derecha">
+                <h2>Mis Redes :</h2>
+                <div class="redes-container">
+                    <a href="https://www.facebook.com/people/Jostin-Murillo-Lopez/pfbid033KPUicABKB5A7vb5gQh39Jo1nSzjyhzYD2pCniKTaHsyJKHYvwc8pbf4AuXuPh2Kl/" class="red-social-item facebook"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    <a href="https://x.com/Gatomichi1212" class="red-social-item x-twitter"><i class="fa-brands fa-x-twitter"></i> X</a>
+                    <a href="https://instagram.com/ckoo133" class="red-social-item instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a href="https://www.tiktok.com/@gatomichi1212" class="red-social-item tiktok"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+                    <a href="https://pinterest.com/Gatomichi12/" class="red-social-item pinterest"><i class="fa-brands fa-pinterest"></i> Pinterest</a>
+                </div>
+                
+                <p class="p-intermedio">Eso es todo, me encargaré de tener todo funcionando correctamente.</p>
+                
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0GnejR6f3FN6zbhMjT7l_vRxUvRaJvtrXA&s" 
+                     alt="Foto de un gatito xd" class="foto-michi">
+            </aside>
+
+            <div class="tarjeta-status">
+                <div class="status-indicator">
+                    <span id="status-dot" class="dot"></span>
+                    <span id="status-text">Comprobando server...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para cambiar entre temas
+        function toggleTheme() {
+            const html = document.documentElement;
+            const themeToggle = document.getElementById('themeToggle');
+            const icon = themeToggle.querySelector('i');
+            const text = themeToggle.querySelector('span');
+            
+            if (html.getAttribute('data-theme') === 'dark') {
+                html.removeAttribute('data-theme');
+                icon.className = 'fas fa-moon';
+                text.textContent = 'Modo Oscuro';
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.setAttribute('data-theme', 'dark');
+                icon.className = 'fas fa-sun';
+                text.textContent = 'Modo Claro';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Función para establecer el tema inicial
+        function setInitialTheme() {
+            const html = document.documentElement;
+            const themeToggle = document.getElementById('themeToggle');
+            const icon = themeToggle.querySelector('i');
+            const text = themeToggle.querySelector('span');
+            
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                html.setAttribute('data-theme', 'dark');
+                icon.className = 'fas fa-sun';
+                text.textContent = 'Modo Claro';
+            } else {
+                html.removeAttribute('data-theme');
+                icon.className = 'fas fa-moon';
+                text.textContent = 'Modo Oscuro';
+            }
+        }
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) tabcontent[i].classList.remove("active");
+            tablinks = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tablinks.length; i++) tablinks[i].classList.remove("active");
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        async function checkServer() {
+            const dot = document.getElementById('status-dot');
+            const text = document.getElementById('status-text');
+            const serverUrl = "https://gatomichi12.duckdns.org"; 
+
+            try {
+                await fetch(serverUrl, { mode: 'no-cors' });
+                dot.className = "dot online";
+                text.innerText = "Server Online";
+                text.style.color = "#2ecc71";
+            } catch (error) {
+                dot.className = "dot offline";
+                text.innerText = "Server Offline";
+                text.style.color = "#e74c3c";
+            }
+        }
+
+        // Inicializar cuando carga la página
+        document.addEventListener('DOMContentLoaded', function() {
+            setInitialTheme();
+            
+            const themeToggle = document.getElementById('themeToggle');
+            themeToggle.addEventListener('click', toggleTheme);
+        });
+
+        checkServer();
+        setInterval(checkServer, 30000);
+    </script>
+</body>
+</html>
